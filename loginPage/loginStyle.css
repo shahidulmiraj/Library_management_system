@@ -7,19 +7,20 @@
   font-family: 'poppins', sans-serif;
 }
 :root {
-  --primary-color: #0ef;
+  --primary-color: #095c3b;
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #081b29;
+  /* background: linear-gradient(90deg, #081b29, var(--primary-color), #081b29); */
+  background: linear-gradient(90deg, #598455, #99b28d, #598455);
 }
 .wrapper {
   position: relative;
   width: 750px;
-  height: 450px;
+  height: 525px;
   background: transparent;
   border: 2px solid var(--primary-color);
   box-shadow: 0 0 25px var(--primary-color);
@@ -37,7 +38,7 @@ body {
 
 .wrapper .form-box.login {
   left: 0;
-  padding: 0 60px 0 40px;
+  padding-left: 40px;
   /* display: none; */
 }
 
@@ -57,7 +58,7 @@ body {
 
 .wrapper .form-box.register {
   right: 0;
-  padding: 0 40px 0 60px;
+  padding-right: 40px;
   pointer-events: none;
 }
 .wrapper.active .form-box.register {
@@ -87,6 +88,10 @@ body {
   width: 100%;
   height: 50px;
   margin: 25px 0;
+}
+.form-box.register .input-box {
+  margin: 20px 0;
+  height: 30px;
 }
 .input-box input {
   width: 100%;
@@ -158,8 +163,8 @@ body {
   top: -100%;
   left: 0;
   width: 100%;
-  height: 300%;
-  background:linear-gradient(#081b29, var(--primary-color), #081b29, var(--primary-color));
+  height: 200%;
+  background:linear-gradient(#112e43, var(--primary-color), #0d2638);
   z-index: -1;
   transition: .5s ease-in-out;
 }
@@ -171,15 +176,29 @@ body {
   font-size: 14.5px;
   color: #fff;
   text-align: center;
-  margin: 20px 0 10px;
+  margin: 10px 0 10px;
+}
+.forgot-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.forgot-link a{
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  opacity: .5;
 }
 .logreg-link p a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 600;
 }
+.forgot-link a:hover,
 .logreg-link p a:hover {
   text-decoration: underline;
+  transition: .3s ease-in-out;
+  opacity: 1;
 }
 
 .wrapper .info-text {
@@ -214,7 +233,7 @@ body {
 .wrapper .info-text.register {
   left: 0;
   text-align: left;
-  padding: 0 150px 60px 40px;
+  padding: 0 150px 60px 30px;
   pointer-events: none;
 }
 .wrapper.active .info-text.register  {
@@ -266,8 +285,8 @@ body {
   top: 100%;
   left: 250px;
   width: 850px;
-  height: 700px;
-  background: #081b29;
+  height: 850px;
+  background: linear-gradient(90deg, #99B28D, #8EAA83, #799B71);
   border-top: 3px solid var(--primary-color);
   transform: rotate(0) skewY(0);
   transform-origin: bottom left;
@@ -275,6 +294,16 @@ body {
   transition-delay: 0.5s ;
 } 
 .wrapper.active .bg-animate2 {
-  transform: rotate(-11deg) skewY(-41deg);
+  transform: rotate(-11deg) skewY(-48deg);
   transition-delay: 1.2s;
+}
+
+.rmstu-logo {
+  width: 170px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.rmstu-logo img {
+  width: 100%;
+  height: 100%;
 }
