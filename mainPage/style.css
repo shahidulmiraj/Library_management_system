@@ -9,8 +9,6 @@
 :root {
   --primary-color: #095c3b;
   --secondary-color: #016A3F;
-  /* --theme-bg-color: linear-gradient(to bottom, rgb(0 102 60) 0%, rgba(0 102 60) 20%, rgba(6,132,80,1) 100%); */
-  --gradient-color: linear-gradient(#91C597, #D1E8CA, #91C597);
 }
 
 /* ----------------------------------------------------------------------- */
@@ -113,6 +111,16 @@
 }
 .user-menu:hover{
   background-color: white;
+}
+.user-btn {
+  display: flex;
+  gap: 10px;
+}
+.user-btn.signin {
+  /* display: none; */
+}
+.user-btn.logout {
+  display: none;
 }
 .user-menu a {
   text-decoration: none;
@@ -280,6 +288,9 @@ section {
   -ms-transform: translate(-50%, -50%);
   transition: all .5s ease-in-out;
   border: 2px solid black;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 5px 0;
 }
 
 .book-detail-btn:hover {
