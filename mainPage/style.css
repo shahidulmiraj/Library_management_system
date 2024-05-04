@@ -34,7 +34,11 @@
 
 .logo {
   width: 200px;
-  height: 70px;
+  height: 60px;
+}
+.logo:hover a{
+  rotate: 360deg;
+  transition: all 0.7s ease-in-out;
 }
 .logo a {
   width: 100%;
@@ -142,7 +146,7 @@
 }
 .dept-list li {
   list-style: none;
-  padding: 11px 50px 11px 50px;
+  padding: 10px 50px;
   cursor: pointer;
   border-bottom: 3px solid transparent; 
   position: relative;
@@ -176,7 +180,7 @@
 }
 
 main {
-  margin-top: 121px;
+  margin-top: 109px;
 }
 /* ------------------------------------------------------------------------- */
 /* all books section  */
@@ -259,7 +263,7 @@ section {
   height: 100%;
   border: 1px solid rgba(79, 78, 78, 0.292);
 }
-.book-header,
+.book-title,
 .book-publication,
 .book-author,
 .book-detail-btn {
@@ -267,7 +271,7 @@ section {
   text-align: center;
   margin: 0 auto;
 }
-.book-header {
+.book-title {
   font-size: 1rem;
 }
 .book-publication {
