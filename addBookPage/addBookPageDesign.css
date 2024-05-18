@@ -127,9 +127,6 @@
 .user-btn.signin {
   display: none;
 }
-.user-btn.logout {
-  /* display: none; */
-}
 .user-menu a {
   text-decoration: none;
   color:black;
@@ -249,7 +246,4 @@ fieldset {
 .input-box input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-.input-box input[type=number] {
-  -moz-appearance: textfield;
 }
