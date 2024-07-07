@@ -121,10 +121,10 @@
   gap: 10px;
 }
 .user-btn.signin {
-  display: none;
+  /* display: none; */
 }
 .user-btn.logout {
-  /* display: none; */
+  display: none;
 }
 .user-menu a {
   text-decoration: none;
